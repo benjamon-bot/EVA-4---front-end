@@ -1,0 +1,22 @@
+:root {
+  --azul:       #1A6FA8;
+  --azul-dark:  #0d3b5e;
+  --menta:      #E8F7F0;
+  --gris:       #6B7280;
+  --borde:      #e5e7eb;
+  --fondo:      #F9FAFB;
+}
+
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a2e;
+  background: #fff;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
