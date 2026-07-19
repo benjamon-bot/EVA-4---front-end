@@ -1,43 +1,47 @@
-const URL= "https://apiclases.inacode.cl/dental"
-
-
-export async function getPedidos() {
+const URL = "https://apiclases.inacode.cl/dental"
+ 
+// READ ALL
+export async function getCitas() {
   const res = await fetch(URL)
-  if (!res.ok) throw new Error('Error al obtener pedidos')
-  const data = await res.json()
-  return data.datos
-}
-
-export async function getPedido(id) {
-  const res = await fetch(${URL}/${id})
-  if (!res.ok) throw new Error('Pedido no encontrado')
+  if (!res.ok) throw new Error('Error al obtener citas')
   return res.json()
 }
-
-export async function crearPedido(pedido) {
-  const res = await fetch(BASE_URL, {
+ 
+// READ ONE
+export async function getCita(id) {
+  const res = await fetch(`${URL}/${id}`)
+  if (!res.ok) throw new Error('Cita no encontrada')
+  return res.json()
+}
+ 
+// CREATE
+export async function crearCita(cita) {
+  const res = await fetch(URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(pedido),
+    body: JSON.stringify(cita),
   })
-  if (!res.ok) throw new Error('Error al crear pedido')
+  if (!res.ok) throw new Error('Error al crear cita')
   return res.json()
 }
-
-export async function actualizarPedido(id, datosActualizados) {
-  const res = await fetch(${BASE_URL}/${id}, {
+ 
+// UPDATE
+export async function actualizarCita(id, datos) {
+  const res = await fetch(`${URL}/${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(datosActualizados),
+    body: JSON.stringify(datos),
   })
-  if (!res.ok) throw new Error('Error al actualizar pedido')
+  if (!res.ok) throw new Error('Error al actualizar cita')
   return res.json()
 }
-
-export async function eliminarPedido(id) {
-  const res = await fetch(${BASE_URL}/${id}, {
+ 
+// DELETE
+export async function eliminarCita(id) {
+  const res = await fetch(`${URL}/${id}`, {
     method: 'DELETE',
   })
-  if (!res.ok) throw new Error('Error al eliminar pedido')
+  if (!res.ok) throw new Error('Error al eliminar cita')
   return res.json()
 }
+ 
