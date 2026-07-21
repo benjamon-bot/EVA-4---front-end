@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './components/navbar.jsx';
-import Footer from './components/footer.jsx';
-import Hero from './components/hero.jsx';
-import Galeria from './components/galeria.jsx';
-import Tratamientos from './components/tratamientos.jsx';
-import Equipo from './components/equipo.jsx';
-import Contacto from './components/contacto.jsx';
-import ModalCita from './components/modalCita.jsx';
+import Navbar from './components/navbar/navbar.jsx';
+import Footer from './components/footer/footer.jsx';
+import Hero from './components/hero/hero.jsx';
+import Galeria from './components//galeria/galeria.jsx';
+import Tratamientos from './components/tratamientos/tratamientos.jsx';
+import Equipo from './components/equipo/Equipo.jsx';
+import Contacto from './components/contacto/contacto.jsx';
+import ModalCita from './components//modal/modalCita.jsx';
 import Citas from './components/citas/Citas.jsx';
 
 export default function App() {
