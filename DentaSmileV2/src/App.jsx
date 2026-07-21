@@ -7,7 +7,6 @@ import Tratamientos from './components/tratamientos/tratamientos.jsx';
 import Equipo from './components/equipo/Equipo.jsx';
 import Contacto from './components/contacto/contacto.jsx';
 import ModalCita from './components//modal/modalCita.jsx';
-import Citas from './components/citas/Citas.jsx';
 
 export default function App() {
     return (
@@ -17,7 +16,6 @@ export default function App() {
             <Hero />
             <Tratamientos />
             <Galeria />
-            <Citas/>
             <Equipo />
             <Contacto />
             <ModalCita />
