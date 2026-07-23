@@ -17,7 +17,7 @@ export default function CitasDelete() {
   async function eliminar(id) {
     if (!confirm('¿Eliminar esta cita?')) return
     await eliminarCita(id)
-    obtener() // refresca la lista
+    obtener()
   }
 
   if (cargando) return <div className="text-center py-3"><div className="spinner-border text-primary" /></div>
