@@ -29,7 +29,6 @@ export default function Galeria() {
             <div key={c.tratamiento} className="col-md-8">
               <div className="card border-0 shadow-sm">
 
-                {/* Imágenes — solo se muestran si están visibles */}
                 {visible[c.tratamiento] && (
                   <div className="row g-0">
                     <div className="col-6 text-center p-2">

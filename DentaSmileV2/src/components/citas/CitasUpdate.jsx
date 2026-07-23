@@ -24,7 +24,6 @@ export default function CitasUpdate() {
     setCargando(false)
   }
 
-  // Al elegir una cita, carga sus datos en el formulario
   function seleccionar(c) {
     setCitaElegida(c)
     setForm({
@@ -85,7 +84,6 @@ export default function CitasUpdate() {
         </div>
       ) : (
 
-        /* PASO 2 — formulario con datos precargados */
         <form onSubmit={handleSubmit}>
           <p className="text-muted small mb-3">
             Editando cita de <strong>{citaElegida.paciente?.nombre}</strong>
